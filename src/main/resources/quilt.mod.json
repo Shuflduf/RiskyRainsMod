@@ -1,0 +1,37 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "${group}",
+        "id": "risky_rains",
+        "version": "${version}",
+        "metadata": {
+            "name": "Risky Rains",
+            "description": "Adds Risk of Rain and Risk of Rain 2 mechanics into Minecraft!",
+            "contributors": {
+                "Shuflduf": "Owner"
+            },
+            "contact": {},
+            "icon": "assets/example_mod/icon.png",
+            "license": "MIT"
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "entrypoints": {
+            "init": "io.github.shuflduf.risky_rains.RiskyRains"
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "versions": ">=0.19.1"
+            },
+            {
+                "id": "quilted_fabric_api",
+                "versions": ">=7.0.2"
+            },
+            {
+                "id": "minecraft",
+                "versions": ">=1.20"
+            }
+        ]
+    },
+    "mixin": "risky_rains.mixins.json"
+}
